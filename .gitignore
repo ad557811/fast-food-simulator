@@ -1,0 +1,3 @@
+# DevContainers
+.devcontainers/wiremock/**.json
+**/.env

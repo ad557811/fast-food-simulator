@@ -1,0 +1,28 @@
+{
+  "name": "Java & Angular DevContainer based on Ubuntu 24.04",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "fastfoodsimulator_devcontainer",
+  "workspaceFolder": "/workspaces",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": true,
+      "mavenVersion": "3.9.12"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24.11.1"
+    }
+  },
+  "postCreateCommand": "npm install -g @angular/cli",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-boot-dev-pack",
+        "ms-azuretools.vscode-containers",
+        "angular.ng-template"
+      ]
+    }
+  }
+}

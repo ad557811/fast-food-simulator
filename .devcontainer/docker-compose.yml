@@ -1,0 +1,10 @@
+include:
+  - elk/elk.yml
+  - keycloak/keycloak.yml
+  - wiremock/wiremock.yml
+services:
+  fastfoodsimulator_devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu-24.04
+    volumes:
+      - ../.:/workspaces:cached
+    command: sleep infinity
